@@ -501,8 +501,7 @@ def menu():
         elif choice == "8":
             print("Goodbye!")
             break
-
-    else:
+        else:
             print("Invalid input. Try 1-8.")
 
 
