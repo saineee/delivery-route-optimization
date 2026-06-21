@@ -1,7 +1,3 @@
-# Paul Miller
-# 011466892
-# 06/9/2025
-
 import logging
 from visualizations import (
     ensure_output_dir,
