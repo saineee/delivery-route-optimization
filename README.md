@@ -3,6 +3,7 @@
 A delivery route optimization system that uses greedy nearest-neighbor and 2-opt algorithms to minimize total mileage across multiple delivery trucks while meeting package deadlines and constraints.
 
 ## Features
+
 - Greedy nearest-neighbor routing algorithm for initial route generation
 - 2-opt local search optimization to further reduce total mileage
 - Custom chaining hash table implementation for O(1) average package lookups
@@ -13,18 +14,26 @@ A delivery route optimization system that uses greedy nearest-neighbor and 2-opt
 - Logging system for tracking dashboard activity
 
 ## Results
+
 - Baseline total mileage: 216.1 miles
 - Optimized total mileage: 88.0 miles
 - Mileage reduction: ~59%
 
 ## Tech Stack
+
 - Python
 - matplotlib (data visualizations)
 - CSV data handling
 
+## Algorithms
+
+**Nearest Neighbor (Greedy)**: builds an initial route by always delivering to the closest unvisited address.
+
+**2-opt**: improves the route by swapping pairs of edges to eliminate crossings and reduce total distance.
+
 ## Project Structure
 
-```
+```python
 delivery_route_optimizer/
 ├── main.py                 # Main application - routing logic and dashboard
 ├── package.py              # Package class with status tracking
@@ -35,7 +44,3 @@ delivery_route_optimizer/
 ├── addresses.csv           # Address data
 └── distances.csv           # Distance matrix
 ```
-
-## Algorithms
-- **Nearest Neighbor (Greedy)** — builds an initial route by always delivering to the closest unvisited address
-- **2-opt** — improves the route by swapping pairs of edges to eliminate crossings and reduce total distance
